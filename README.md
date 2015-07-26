@@ -10,14 +10,8 @@ The R code first reads the dataset (including both test data and training data) 
 4. Calculates the average of each variable for each activity and each subject.
 
 *********************************************Code Book**************************************************
-subject: the id of the subject in the experiment
-Activies: the lable of the activities
-          1=walking
-          2=walking upstairs
-          3=walking downstairs
-          4=sitting
-          5=standing
-          6=laying
+subject: the id of the subject in the experiment.
+Activies: the lable of the activities (1=walking, 2=walking upstairs, 3=walking downstairs, 4=sitting, 5=standing, 6=laying).
 variables:
 tBodyAccmX	is the mean of	tBodyAcc-mean()-X	in the original dataset
 tBodyAccmY	is the mean of	tBodyAcc-mean()-Y	in the original dataset
