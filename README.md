@@ -9,78 +9,77 @@ The R code first reads the dataset (including both test data and training data) 
 3. Labels data set with descriptive variable names. 
 4. Calculates the average of each variable for each activity and each subject.
 
-*********************************************Code Book**************************************************
-subject: the id of the subject in the experiment.
-Activies: the lable of the activities (1=walking, 2=walking upstairs, 3=walking downstairs, 4=sitting, 5=standing, 6=laying).
-variables:
-tBodyAccmX	is the mean of	tBodyAcc-mean()-X	in the original dataset
-tBodyAccmY	is the mean of	tBodyAcc-mean()-Y	in the original dataset
-tBodyAccmZ	is the mean of	tBodyAcc-mean()-Z	in the original dataset
-tBodyAccsdX	is the mean of	tBodyAcc-std()-X	in the original dataset
-tBodyAccsdY	is the mean of	tBodyAcc-std()-Y	in the original dataset
-tBodyAccsdZ	is the mean of	tBodyAcc-std()-Z	in the original dataset
-tGravityAccmX	is the mean of	tGravityAcc-mean()-X	in the original dataset
-tGravityAccmY	is the mean of	tGravityAcc-mean()-Y	in the original dataset
-tGravityAccmZ	is the mean of	tGravityAcc-mean()-Z	in the original dataset
-tGravityAccsdX	is the mean of	tGravityAcc-std()-X	in the original dataset
-tGravityAccsdY	is the mean of	tGravityAcc-std()-Y	in the original dataset
-tGravityAccsdZ	is the mean of	tGravityAcc-std()-Z	in the original dataset
-tBodyAccJerkmX	is the mean of	tBodyAccJerk-mean()-X	in the original dataset
-tBodyAccJerkmY	is the mean of	tBodyAccJerk-mean()-Y	in the original dataset
-tBodyAccJerkmZ	is the mean of	tBodyAccJerk-mean()-Z	in the original dataset
-tBodyAccJerksdX	is the mean of	tBodyAccJerk-std()-X	in the original dataset
-tBodyAccJerksdY	is the mean of	tBodyAccJerk-std()-Y	in the original dataset
-tBodyAccJerksdZ	is the mean of	tBodyAccJerk-std()-Z	in the original dataset
-tBodyGyromX	is the mean of	tBodyGyro-mean()-X	in the original dataset
-tBodyGyromY	is the mean of	tBodyGyro-mean()-Y	in the original dataset
-tBodyGyromZ	is the mean of	tBodyGyro-mean()-Z	in the original dataset
-tBodyGyrosdX	is the mean of	tBodyGyro-std()-X	in the original dataset
-tBodyGyrosdY	is the mean of	tBodyGyro-std()-Y	in the original dataset
-tBodyGyrosdZ	is the mean of	tBodyGyro-std()-Z	in the original dataset
-tBodyGyroJerkmX	is the mean of	tBodyGyroJerk-mean()-X	in the original dataset
-tBodyGyroJerkmY	is the mean of	tBodyGyroJerk-mean()-Y	in the original dataset
-tBodyGyroJerkmZ	is the mean of	tBodyGyroJerk-mean()-Z	in the original dataset
-tBodyGyroJerksdX	is the mean of	tBodyGyroJerk-std()-X	in the original dataset
-tBodyGyroJerksdY	is the mean of	tBodyGyroJerk-std()-Y	in the original dataset
-tBodyGyroJerksdZ	is the mean of	tBodyGyroJerk-std()-Z	in the original dataset
-tBodyAccMagm	is the mean of	tBodyAccMag-mean()	in the original dataset
-tBodyAccMagsd	is the mean of	tBodyAccMag-std()	in the original dataset
-tGravityAccMagm	is the mean of	tGravityAccMag-mean()	in the original dataset
-tGravityAccMagsd	is the mean of	tGravityAccMag-std()	in the original dataset
-tBodyAccJerkMagm	is the mean of	tBodyAccJerkMag-mean()	in the original dataset
-tBodyAccJerkMagsd	is the mean of	tBodyAccJerkMag-std()	in the original dataset
-tBodyGyroMagm	is the mean of	tBodyGyroMag-mean()	in the original dataset
-tBodyGyroMagsd	is the mean of	tBodyGyroMag-std()	in the original dataset
-tBodyGyroJerkMagm	is the mean of	tBodyGyroJerkMag-mean()	in the original dataset
-tBodyGyroJerkMagsd	is the mean of	tBodyGyroJerkMag-std()	in the original dataset
-fBodyAccmX	is the mean of	fBodyAcc-mean()-X	in the original dataset
-fBodyAccmY	is the mean of	fBodyAcc-mean()-Y	in the original dataset
-fBodyAccmZ	is the mean of	fBodyAcc-mean()-Z	in the original dataset
-fBodyAccsdX	is the mean of	fBodyAcc-std()-X	in the original dataset
-fBodyAccsdY	is the mean of	fBodyAcc-std()-Y	in the original dataset
-fBodyAccsdZ	is the mean of	fBodyAcc-std()-Z	in the original dataset
-fBodyAccJerkmX	is the mean of	fBodyAccJerk-mean()-X	in the original dataset
-fBodyAccJerkmY	is the mean of	fBodyAccJerk-mean()-Y	in the original dataset
-fBodyAccJerkmZ	is the mean of	fBodyAccJerk-mean()-Z	in the original dataset
-fBodyAccJerksdX	is the mean of	fBodyAccJerk-std()-X	in the original dataset
-fBodyAccJerksdY	is the mean of	fBodyAccJerk-std()-Y	in the original dataset
-fBodyAccJerksdZ	is the mean of	fBodyAccJerk-std()-Z	in the original dataset
-fBodyGyromX	is the mean of	fBodyGyro-mean()-X	in the original dataset
-fBodyGyromY	is the mean of	fBodyGyro-mean()-Y	in the original dataset
-fBodyGyromZ	is the mean of	fBodyGyro-mean()-Z	in the original dataset
-fBodyGyrosdX	is the mean of	fBodyGyro-std()-X	in the original dataset
-fBodyGyrosdY	is the mean of	fBodyGyro-std()-Y	in the original dataset
-fBodyGyrosdZ	is the mean of	fBodyGyro-std()-Z	in the original dataset
-fBodyAccMagm	is the mean of	fBodyAccMag-mean()	in the original dataset
-fBodyAccMagsd	is the mean of	fBodyAccMag-std()	in the original dataset
-fBodyBodyGyroMagm	is the mean of	fBodyBodyGyroMag-mean()	in the original dataset
-fBodyBodyGyroMagsd	is the mean of	fBodyBodyGyroMag-std()	in the original dataset
-fBodyBodyGyroJerkMagm	is the mean of	fBodyBodyGyroJerkMag-mean()	in the original dataset
-fBodyBodyGyroJerkMagsd	is the mean of	fBodyBodyGyroJerkMag-std()	in the original dataset
-angle_tBodyAccm_gravity	is the mean of	angle(tBodyAccMean,gravity)	in the original dataset
-angle_tBodyAccJerkm__gravitym	is the mean of	angle(tBodyAccJerkMean),gravityMean)	in the original dataset
-angle_tBodyGyrom_gravitym	is the mean of	angle(tBodyGyroMean,gravityMean)	in the original dataset
-angle_tBodyGyroJerkm_gravitym	is the mean of	angle(tBodyGyroJerkMean,gravityMean)	in the original dataset
-angle_X_gravitym	is the mean of	angle(X,gravityMean)	in the original dataset
-angle_Y_gravitym	is the mean of	angle(Y,gravityMean)	in the original dataset
-angle_Z_gravitym	is the mean of	angle(Z,gravityMean)	in the original dataset
+CODE BOOK
+1.	subject: the id of the subject in the experiment.
+2.	Activies: the lable of the activities (1=walking, 2=walking upstairs, 3=walking downstairs, 4=sitting, 5=standing, 6=laying).
+3.	3. tBodyAccmX	is the mean of	tBodyAcc-mean()-X	in the original dataset.
+4.	4. tBodyAccmY	is the mean of	tBodyAcc-mean()-Y	in the original dataset.
+5.	5. tBodyAccmZ	is the mean of	tBodyAcc-mean()-Z	in the original dataset.
+6.	6. tBodyAccsdX	is the mean of	tBodyAcc-std()-X	in the original dataset.
+7.	7. tBodyAccsdY	is the mean of	tBodyAcc-std()-Y	in the original dataset.
+8.	tBodyAccsdZ	is the mean of	tBodyAcc-std()-Z	in the original dataset.
+9.	tGravityAccmX	is the mean of	tGravityAcc-mean()-X	in the original dataset.
+10.	tGravityAccmY	is the mean of	tGravityAcc-mean()-Y	in the original dataset.
+11.	tGravityAccmZ	is the mean of	tGravityAcc-mean()-Z	in the original dataset.
+12.	tGravityAccsdX	is the mean of	tGravityAcc-std()-X	in the original dataset.
+13.	tGravityAccsdY	is the mean of	tGravityAcc-std()-Y	in the original dataset.
+14.	tGravityAccsdZ	is the mean of	tGravityAcc-std()-Z	in the original dataset.
+15.	tBodyAccJerkmX	is the mean of	tBodyAccJerk-mean()-X	in the original dataset.
+16.	tBodyAccJerkmY	is the mean of	tBodyAccJerk-mean()-Y	in the original dataset.
+17.	tBodyAccJerkmZ	is the mean of	tBodyAccJerk-mean()-Z	in the original dataset.
+18.	tBodyAccJerksdX	is the mean of	tBodyAccJerk-std()-X	in the original dataset.
+19.	tBodyAccJerksdY	is the mean of	tBodyAccJerk-std()-Y	in the original dataset.
+20.	tBodyAccJerksdZ	is the mean of	tBodyAccJerk-std()-Z	in the original dataset.
+21.	tBodyGyromX	is the mean of	tBodyGyro-mean()-X	in the original dataset.
+22.	tBodyGyromY	is the mean of	tBodyGyro-mean()-Y	in the original dataset.
+23.	tBodyGyromZ	is the mean of	tBodyGyro-mean()-Z	in the original dataset.
+24.	tBodyGyrosdX	is the mean of	tBodyGyro-std()-X	in the original dataset.
+25.	tBodyGyrosdY	is the mean of	tBodyGyro-std()-Y	in the original dataset.
+26.	tBodyGyrosdZ	is the mean of	tBodyGyro-std()-Z	in the original dataset.
+27.	tBodyGyroJerkmX	is the mean of	tBodyGyroJerk-mean()-X	in the original dataset.
+28.	tBodyGyroJerkmY	is the mean of	tBodyGyroJerk-mean()-Y	in the original dataset.
+29.	tBodyGyroJerkmZ	is the mean of	tBodyGyroJerk-mean()-Z	in the original dataset.
+30.	tBodyGyroJerksdX	is the mean of	tBodyGyroJerk-std()-X	in the original dataset.
+31.	tBodyGyroJerksdY	is the mean of	tBodyGyroJerk-std()-Y	in the original dataset.
+32.	tBodyGyroJerksdZ	is the mean of	tBodyGyroJerk-std()-Z	in the original dataset.
+33.	tBodyAccMagm	is the mean of	tBodyAccMag-mean()	in the original dataset.
+34.	tBodyAccMagsd	is the mean of	tBodyAccMag-std()	in the original dataset.
+35.	tGravityAccMagm	is the mean of	tGravityAccMag-mean()	in the original dataset.
+36.	tGravityAccMagsd	is the mean of	tGravityAccMag-std()	in the original dataset.
+37.	tBodyAccJerkMagm	is the mean of	tBodyAccJerkMag-mean()	in the original dataset.
+38.	tBodyAccJerkMagsd	is the mean of	tBodyAccJerkMag-std()	in the original dataset.
+39.	tBodyGyroMagm	is the mean of	tBodyGyroMag-mean()	in the original dataset.
+40.	tBodyGyroMagsd	is the mean of	tBodyGyroMag-std()	in the original dataset.
+41.	tBodyGyroJerkMagm	is the mean of	tBodyGyroJerkMag-mean()	in the original dataset.
+42.	tBodyGyroJerkMagsd	is the mean of	tBodyGyroJerkMag-std()	in the original dataset.
+43.	fBodyAccmX	is the mean of	fBodyAcc-mean()-X	in the original dataset.
+44.	fBodyAccmY	is the mean of	fBodyAcc-mean()-Y	in the original dataset.
+45.	fBodyAccmZ	is the mean of	fBodyAcc-mean()-Z	in the original dataset.
+46.	fBodyAccsdX	is the mean of	fBodyAcc-std()-X	in the original dataset.
+47.	fBodyAccsdY	is the mean of	fBodyAcc-std()-Y	in the original dataset.
+48.	fBodyAccsdZ	is the mean of	fBodyAcc-std()-Z	in the original dataset.
+49.	fBodyAccJerkmX	is the mean of	fBodyAccJerk-mean()-X	in the original dataset.
+50.	fBodyAccJerkmY	is the mean of	fBodyAccJerk-mean()-Y	in the original dataset.
+51.	fBodyAccJerkmZ	is the mean of	fBodyAccJerk-mean()-Z	in the original dataset.
+52.	fBodyAccJerksdX	is the mean of	fBodyAccJerk-std()-X	in the original dataset.
+53.	fBodyAccJerksdY	is the mean of	fBodyAccJerk-std()-Y	in the original dataset.
+54.	fBodyAccJerksdZ	is the mean of	fBodyAccJerk-std()-Z	in the original dataset.
+55.	fBodyGyromX	is the mean of	fBodyGyro-mean()-X	in the original dataset.
+56.	fBodyGyromY	is the mean of	fBodyGyro-mean()-Y	in the original dataset.
+57.	fBodyGyromZ	is the mean of	fBodyGyro-mean()-Z	in the original dataset.
+58.	fBodyGyrosdX	is the mean of	fBodyGyro-std()-X	in the original dataset.
+59.	fBodyGyrosdY	is the mean of	fBodyGyro-std()-Y	in the original dataset.
+60.	fBodyGyrosdZ	is the mean of	fBodyGyro-std()-Z	in the original dataset.
+61.	fBodyAccMagm	is the mean of	fBodyAccMag-mean()	in the original dataset.
+62.	fBodyAccMagsd	is the mean of	fBodyAccMag-std()	in the original dataset.
+63.	fBodyBodyGyroMagm	is the mean of	fBodyBodyGyroMag-mean()	in the original dataset.
+64.	fBodyBodyGyroMagsd	is the mean of	fBodyBodyGyroMag-std()	in the original dataset.
+65.	fBodyBodyGyroJerkMagm	is the mean of	fBodyBodyGyroJerkMag-mean()	in the original dataset.
+66.	fBodyBodyGyroJerkMagsd	is the mean of	fBodyBodyGyroJerkMag-std()	in the original dataset.
+67.	angle_tBodyAccm_gravity	is the mean of	angle(tBodyAccMean,gravity)	in the original dataset.
+68.	angle_tBodyAccJerkm__gravitym	is the mean of	angle(tBodyAccJerkMean),gravityMean)	in the original dataset.
+69.	angle_tBodyGyrom_gravitym	is the mean of	angle(tBodyGyroMean,gravityMean)	in the original dataset.
+70.	angle_tBodyGyroJerkm_gravitym	is the mean of	angle(tBodyGyroJerkMean,gravityMean)	in the original dataset.
+71.	angle_X_gravitym	is the mean of	angle(X,gravityMean)	in the original dataset.
+72.	angle_Y_gravitym	is the mean of	angle(Y,gravityMean)	in the original dataset.
+73.	angle_Z_gravitym	is the mean of	angle(Z,gravityMean)	in the original dataset.
