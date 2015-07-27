@@ -10,13 +10,14 @@ The R code first reads the dataset (including both test data and training data) 
 4. Calculates the average of each variable for each activity and each subject.
 
 CODE BOOK
+
 1.	subject: the id of the subject in the experiment.
 2.	Activies: the lable of the activities (1=walking, 2=walking upstairs, 3=walking downstairs, 4=sitting, 5=standing, 6=laying).
-3.	3. tBodyAccmX	is the mean of	tBodyAcc-mean()-X	in the original dataset.
-4.	4. tBodyAccmY	is the mean of	tBodyAcc-mean()-Y	in the original dataset.
-5.	5. tBodyAccmZ	is the mean of	tBodyAcc-mean()-Z	in the original dataset.
-6.	6. tBodyAccsdX	is the mean of	tBodyAcc-std()-X	in the original dataset.
-7.	7. tBodyAccsdY	is the mean of	tBodyAcc-std()-Y	in the original dataset.
+3.	tBodyAccmX	is the mean of	tBodyAcc-mean()-X	in the original dataset.
+4.	tBodyAccmY	is the mean of	tBodyAcc-mean()-Y	in the original dataset.
+5.	tBodyAccmZ	is the mean of	tBodyAcc-mean()-Z	in the original dataset.
+6.	tBodyAccsdX	is the mean of	tBodyAcc-std()-X	in the original dataset.
+7.	tBodyAccsdY	is the mean of	tBodyAcc-std()-Y	in the original dataset.
 8.	tBodyAccsdZ	is the mean of	tBodyAcc-std()-Z	in the original dataset.
 9.	tGravityAccmX	is the mean of	tGravityAcc-mean()-X	in the original dataset.
 10.	tGravityAccmY	is the mean of	tGravityAcc-mean()-Y	in the original dataset.
@@ -83,3 +84,5 @@ CODE BOOK
 71.	angle_X_gravitym	is the mean of	angle(X,gravityMean)	in the original dataset.
 72.	angle_Y_gravitym	is the mean of	angle(Y,gravityMean)	in the original dataset.
 73.	angle_Z_gravitym	is the mean of	angle(Z,gravityMean)	in the original dataset.
+
+
