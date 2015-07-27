@@ -1,8 +1,8 @@
 # Samsungdata
 
-The purpose of this R code is to clean the raw dataset "Human Activity Recognition Using Smartphones Data Set" (available https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). A full description is available at the site where the data was obtained: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
+The purpose of this R code is to clean the raw dataset "Human Activity Recognition Using Smartphones Data Set" (available at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). A full description is available at the site: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
 
-The R code first reads the dataset (including both test data and training data) and then merge the dataset. Then the following  are applied to the raw dataset in order to clean the data:
+The R code first reads the dataset (including both test data and training data) and then merge the dataset. Then the following are applied to the raw dataset in order to clean the data:
 
 1. Extracts the mean and standard deviation for each measurement.
 2. Uses descriptive activity names to name the activities in the data set.
